@@ -1,181 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>English Course</title>
+<html>
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="utf-8" />
+  <title>ACCESS-ES</title>
 
-    <!-- CSS & Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/English Course/css/styles.css" />
-  </head>
-  <body>
-    <section id="title">
-      <!-- Navbar Main -->
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-      <nav
-        class="navbar navbar-expand-lg d-sm-none d-md-block d-none d-sm-block"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">ACCESS-ES</a>
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Program</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Promo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item ms-auto">
-              <button class="btn btn-primary" type="button">
-                <a class="nav-link">Daftar</a>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <!-- Google Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-      <!-- Navbar Mobile Top -->
+  <!-- CSS Stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" />
 
-      <nav
-        class="navbar navbar-light bg-light d-md-none d-lg-none d-xl-none sticky-top"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">ACCESS-ES</a>
-        </div>
-      </nav>
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</head>
 
-      <!-- Navbar Mobile Bottom -->
+<body>
+  <section id="title">
 
-      <nav
-        class="navbar navbar-light bg-light navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom"
-      >
-        <ul class="navbar-nav nav-justified w-100">
+    <div class="container-fluid">
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="">ACCESS-ES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a class="nav-link" href="">Beranda</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Cari</a>
+            <a class="nav-link" href="">Program</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Add</a>
+            <a class="nav-link" href="">Promo</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Notif</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Profile</a>
+            <a class="nav-link" href="">Blog</a>
           </li>
         </ul>
-      </nav>
-
-      <!-- Title -->
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h1>Belajar Bahasa Inggris di Kampung Inggris.</h1>
-          <button class="btn btn-warning btn-lg" type="button">
-            Daftar Sekarang
-          </button>
-        </div>
-        <div class="col-lg-6 title-image">
-          <img
-            class="img-fluid"
-            src="images/title-image.png"
-            alt="title-image"
-          />
-        </div>
+        <button type="button" class="btn btn-outline-primary btn-navbar">Daftar</button>
       </div>
+    </nav>
+
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1>Belajar Bahasa Inggris di Kampung Inggris.</h1>
+        <button class="btn btn-lg btn-daftar" type="button">Daftar Sekarang</button>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-image" src="images/title-image.png" alt="title-image" />
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+    <!-- Features -->
+
+    <section id="features">
+      <div class="row">
+      <div class="feature-box col-lg-3 col-md-6">
+        <span class="material-symbols-outlined">history_edu</span>
+        <h3>Berpengalaman</h3>
+        <p>So easy to use, even your dog could do it.</p>  
+      </div>
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <span class="material-symbols-outlined">verified</span>
+        <h3>Professional</h3>
+        <p>We have all the dogs, the greatest dogs.</p>  
+      </div>
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <span class="material-symbols-outlined">language</span>
+        <h3>Standar Internasional</h3>
+        <p>Find the love of your dog's life or your money back.</p>  
+      </div>
+      
+      <div class="feature-box col-lg-3 col-md-6">
+        <span class="material-symbols-outlined">ads_click</span>
+        <h3>Tepat</h3>
+        <p>Find the love of your dog's life or your money back.</p>  
+      </div>
+    </div>
     </section>
+    
+  <!-- Pricing -->
+  
+  <section id="pricing">
+    <div class="pricing-title">
+      <h2 class="pricing-heading">Popular Products</h2>
+      <p>Coba pengalaman belajar bahasa inggris dengan program terbaik.</p>
+    </div>
+  </section>
 
-    <!-- Course Package -->
+  <!-- Testimonials -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          Paket Reguler Asrama 1 Bulan
+  <section id="testimonials">
+
+    <h1>What Student Say About ACCESS-ES</h1>
+    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <h2>
+        I no longer have to sniff other dogs for love. I've found the hottest
+        Corgi on TinDog. Woof.
+        </h2>
+        <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile" />
+        <em>Pebbles, New York</em>
+    
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          Paket Reguler Asrama 2 Minggu
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
         </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          Paket Reguler Non Asrama 1 Bulan
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">
-          Paket Reguler Non Asrama 2 Minggu
-        </div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Internship Program</div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <!-- Course Only -->
+  </section>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-6">Speaking</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Pronunciation</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Grammar</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Vocabulary</div>
-      </div>
+  <!-- FAQ -->
+
+  <section id="faq">
+    <div class="faq-title">
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+      <p>Berikut adalah beberapa pertanyaan yang sering ditanyakan oleh costumer <br>
+        kepada ACCESS-ES.        
+      </p>
     </div>
 
-    <!-- Study Club -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-6">Conversation</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Grammar for Speaking</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Idiom</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Public Speaking</div>
-        <div class="col-lg-2 col-md-3 col-sm-6">Rap Song</div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Apa itu Kampung Inggris Pare?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            Kampung Inggris Pare adalah nama panggilan dari desa Tulungrejo dan Pelem yang ada di kecamatan Pare, Kabupaten Kediri, Jawa Timur. Terdapat ratusan lembaga kursus bahasa inggris dan ribuan pelajar di kampung inggris | Selengkapnya
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Saya Tidak Punya Dasar Bahasa Inggris, Kelas Apa yang Sebaiknya Saya Ambil?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            Untuk pemula kami sarankan untuk mengambil Paket Program Reguler Asrama dulu.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Berapa Biaya Kursus Di Kampung Inggris Pare?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Biaya kursus di Kampung Inggris kirasaran Rp 800.000/2 minggu dan Rp 1.100.000/1 bulan.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            Apa yang Perlu Dipersiapkan Sebelum Ke Kampung Inggris Pare?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            Silahkan baca Tips Sebelum ke Kampung Inggris Pare.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            Bagaimana Cara Ke Kampung Inggris Pare?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            Silahkan baca Rute ke Kampung Inggris Pare (dari Manapun Anda Datang).
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            Kapan Kelas/Periode baru dimulai di Kampung Inggris Pare?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+          <div class="accordion-body">
+            Kelas baru atau Periode baru dibuka pada tanggal 10 dan 25 setiap bulannya. Untuk pendaftaran bisa dilakukan beberapa hari atau beberapa minggu sebelum kelas dimulai
+          </div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- Testimonials -->
+  <!-- Call to Action -->
 
-    <section id="testimonials"></section>
+  <section id="cta">
+    <div class="container-cta">
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="img-fluid" src="images/cta-image.png" alt="cta-image" />
+      </div>
+      <div class="cta-text col-lg-8">
+        <h3 class="cta-heading">Masih bingung pilih program apa?.</h3>
+        <p>Yuk, tanya sama admin yang baik hati dan tidak sombong :D</p>
+        <button class="btn btn-warning" type="button">Chat Admin Sekarang</button>
+      </div>
+    </div>
+    </div>
+  </section>
 
-    <!-- FAQ -->
+  <!-- Footer -->
 
-    <section id="faq"></section>
+  <footer id="footer">
+    <div class="container-footer">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <h3>Dimas Yusuf Qurohman</h3>
+          <p>Email: dimasyusufqurohman@gmail.com<br>
+          Phone: 081325200120
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Tentang</h3>
+          <a href="">Tentang Kami</a>
+          <a href="">Karir</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Belajar Gratis</h3>
+          <a href="">Indonesia Belajar</a>
+          <a href="">Komunitas</a>
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3>Download ACCESS-ES App</h3>
+          <button class="btn btn-warning">Download</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+    <p>© Copyright 2022 - Dimas Yusuf Qurohman</p>
+    </div>
+  </footer>
+</body>
 
-    <!-- Call to Action -->
-
-    <section id="cta"></section>
-
-    <!-- Footer -->
-
-    <footer>
-      <p>© 2022 Dimas Yusuf Qurohman. All rights reserved.</p>
-    </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
