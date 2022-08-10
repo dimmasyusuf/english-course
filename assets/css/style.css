@@ -1,0 +1,255 @@
+/* Costum Property */
+
+:root {
+
+  /* Colors */
+  --ultramarine-blue_10: hsla(235, 70%, 60%, 0.1);
+  --ultramarine-blue: hsl(235, 70%, 60%);
+  --orange-peel_10: hsla(36, 100%, 55%, 0.1);
+  --space-cadet_20: hsla(248, 32%, 23%, 0.2);
+  --space-cadet_80: hsla(247, 35%, 19%, 0.8);
+  --space-cadet-2: hsl(247, 35%, 19%);
+  --old-lavender: hsl(251, 9%, 46%);
+  --orange-peel: hsl(36, 100%, 55%);
+  --tart-orange: hsl(0, 100%, 63%);
+  --light-gray: hsl(0, 0%, 80%);
+  --cultured-1: hsl(0, 0%, 96%);
+  --cultured-2: hsl(0, 0%, 93%);
+  --coral_10: hsla(14, 95%, 66%, 0.1);
+  --white_10: hsla(0, 0%, 100%, 0.1);
+  --black_80: hsla(0, 0%, 0%, 0.8);
+  --pumpkin: hsl(26, 98%, 49%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --ff-urbanist: "Urbanist", sans-serif;
+
+  --fs-1: 4rem;
+  --fs-2: 3.2rem;
+  --fs-3: 2.4rem;
+  --fs-4: 2rem;
+  --fs-5: 1.8rem;
+  --fs-6: 1.4rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  /* Spacing */
+  --section-padding: 80px;
+
+  /* Box Shadow */
+  --shadow-1: 0 8px 20px hsla(0, 0%, 0%, 0.06);
+  --shadow-2: 0px 4px 10px hsla(0, 0%, 0%, 0.05);
+
+  /* Border Radius */
+  --radius-4: 4px;
+  --radius-6: 6px;
+
+  /* Transition */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  font-family: var(--ff-urbanist);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--old-lavender);
+  font-size: 1.6rem;
+  font-weight: var(--fw-500);
+  line-height: 1.6;
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--cultured-1);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+
+/* Reused Style */
+.container {
+    padding-inline: 15px;
+}
+
+/* Header */
+.login-btn .span {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 20px;
+    z-index: 4;
+}
+
+.header.active {
+    background-color: var(--white);
+    padding-block: 15px;
+    box-shadow: var(--shadow-2);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--ultramarine-blue);
+    font-size: 2.4rem;
+    font-weight: var(--fw-800);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-action-btn {
+    background-color: var(--white);
+    color: var(--ultramarine-blue);
+    padding: 12px;
+    border-radius: var(--radius-4);
+    box-shadow: var(--shadow-1);
+}
+
+.header-action-btn ion-icon { --ionicon-stroke-width: 40px; }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    background-color: var(--white);
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    visibility: hidden;
+    transition: 0.25s --cubic-in;
+}
+
+.navbar.active {
+    visibility: visible;
+    transform: translate(300px);
+    transition: 0.5s --cubic-out;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-block-end: 1px solid --cultured-2;
+}
+
+.navbar .logo {
+    font-size: 2.8rem;
+}
+
+.nav-close-btn {
+    background-color: var(--white);
+    color: var(--space-cadet-2);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-1);
+}
+
+.navbar-list {
+    padding: 15px 20px;
+}
+
+.navbar-item:not(last-child) {
+    border-block-end: 1px solid var(--cultured-2);
+}
+
+.navbar-link {
+    font-weight: var(--fw-500);
+    padding-block: 8px;
+    transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) {
+    color: var(--ultramarine-blue);
+}
