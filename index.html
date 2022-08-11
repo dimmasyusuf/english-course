@@ -24,13 +24,13 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header active" data-header>
+    <header class="header" data-header>
         <div class="container">
             <h1>
                 <a href="#" class="logo">ACCESS-ES</a>
             </h1>
 
-            <nav class="navbar active" data-navbar>
+            <nav class="navbar" data-navbar>
                 <div class="navbar-top">
                     <a href="#" class="logo">ACCESS-ES</a>
 
@@ -67,7 +67,7 @@
             </nav>
             
             <div class="header-actions">
-                <button class="header-action-btn" aria-label="Open search" data-search-btn>
+                <button class="header-action-btn" aria-label="Open search" data-search-toggler>
                     <ion-icon name="search-outline"></ion-icon>
                 </button>
 
@@ -77,12 +77,61 @@
                     <span class="span">Login / Register</span>
                 </a>
 
-                <button class="header-action-btn nav-open-btn" aria-label="Open menu">
+                <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
                     <ion-icon name="menu-outline"></ion-icon>
                 </button>
             </div>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
+
+    <!-- Search Box -->
+    <div class="search-container" data-search-box>
+        <div class="container">
+            <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="search-wrapper">
+                <input class="search-field" type="search" name="search" placeholder="Search Here ..." aria-label="Search">
+
+                <button class="search-submit" aria-label="Submit" data-search-toggler>
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <article>
+            <!-- Hero -->
+            <section class="hero" id="home" aria-label="hero" style="background-image: url(assets/images/hero-bg.jpg)">
+                <div class="container">
+                    
+                    <div class="hero-content">
+                        <p class="section-subtitle">Study Hard Or Go Home</p>
+                        <h2 class="h1 hero-title">Education is About Academic Excellence</h2>
+                        <p class="hero-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies massa ex, eget aliquet arcu congue vitae.
+                        </p>
+                        <a href="#" class="btn btn-primary">
+                            <span class="span">Daftar Sekarang</span>
+                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="assets/images/hero-banner.png" width="500" height="500" loading="lazy" alt="hero image" class="w-100">
+                        <img src="assets/images/hero-abs-1.png" width="318" height="352" loading="lazy" aria-hidden="true" class="abs-img abs-img-1">
+                        <img src="assets/images/hero-abs-2.png" width="160" height="160" loading="lazy" aria-hidden="true" class="abs-img abs-img-2">
+                    </figure>
+
+                </div>
+
+            </section>
+        </article>
+    </main>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js" defer></script>
