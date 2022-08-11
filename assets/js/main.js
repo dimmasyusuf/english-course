@@ -16,15 +16,20 @@ for (let i = 0; i < navTogglers.length; i++) {
     });
 }
 
-// Header Sticky
+// Header Sticky & Back to Top Button
 
 const header = document.querySelector("[data-header]");
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 
 window.addEventListener("scroll", function() {
     if (this.window.scrollY >= 100) {
         header.classList.add("active");
+        backTopBtn.classList.add("active");
+        header.classList.add("header-anim");
     } else {
         header.classList.remove("active");
+        backTopBtn.classList.remove("active");
+        header.classList.remove("header-anim");
     }
 })
 
@@ -36,5 +41,15 @@ const searchBox = document.querySelector("[data-search-box]");
 for (let i = 0; i < searchTogglers.length; i++) {
     searchTogglers[i].addEventListener("click", function() {
         toggleElem(searchBox);
+    })
+}
+
+// Wishlist Button Toggle
+
+const wishListBtns = document.querySelectorAll("[data-wish-btn]");
+
+for (let i = 0; i < wishListBtns.length; i++) {
+    wishListBtns[i].addEventListener("click", function() {
+        toggleElem(this);
     })
 }
